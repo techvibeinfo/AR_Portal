@@ -3,7 +3,10 @@ guid: 34580b15ad3f22a4aabe521410cde58e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - GridPrefab: {instanceID: 0}
+  - Portal: {instanceID: 0}
+  - ARCamera: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
