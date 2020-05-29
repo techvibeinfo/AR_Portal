@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -405,8 +406,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633987594}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -510,8 +512,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854905462}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -569,16 +572,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1875758096}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: bcd2f311532e10f408e13b3e2657cda0,
-        type: 3}
-      propertyPath: m_Name
-      value: Sponza
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: bcd2f311532e10f408e13b3e2657cda0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: bcd2f311532e10f408e13b3e2657cda0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -734,6 +727,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[19]
       value: 
       objectReference: {fileID: 2100000, guid: 32229539bb526a942897502b1edf6584, type: 2}
+    - target: {fileID: -927199367670048503, guid: bcd2f311532e10f408e13b3e2657cda0,
+        type: 3}
+      propertyPath: m_Name
+      value: Sponza
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: bcd2f311532e10f408e13b3e2657cda0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcd2f311532e10f408e13b3e2657cda0, type: 3}
 --- !u!1 &1234203856
@@ -1038,16 +1041,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: cd660c1dde72cd247bda9088c41445e2,
-        type: 3}
-      propertyPath: m_Name
-      value: Portal
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: cd660c1dde72cd247bda9088c41445e2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cd660c1dde72cd247bda9088c41445e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1103,16 +1096,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7796965159598972112, guid: cd660c1dde72cd247bda9088c41445e2,
+    - target: {fileID: -927199367670048503, guid: cd660c1dde72cd247bda9088c41445e2,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bf1bd5ba6bf164d4da6a1c6bf4911f92, type: 2}
+      propertyPath: m_Name
+      value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cd660c1dde72cd247bda9088c41445e2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5448579309193325848, guid: cd660c1dde72cd247bda9088c41445e2,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d06505fe25852464b82edb9417f39024, type: 2}
+    - target: {fileID: 7796965159598972112, guid: cd660c1dde72cd247bda9088c41445e2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bf1bd5ba6bf164d4da6a1c6bf4911f92, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd660c1dde72cd247bda9088c41445e2, type: 3}
 --- !u!1 &1875758095 stripped
@@ -1166,8 +1169,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985308836}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
